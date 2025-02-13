@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="px-[150px]">
+    <!-- Title -->
+    <h1 class="text-center font-bold mt-14 text-4xl">Quotes</h1>
+    <h3 class="font-semibold text-sm mt-15">Quote Input</h3>
+    <!--  form -->
+    <form
+      id="formSearch"
+      class="flex justify-between items-center mt-1 gap-x-4"
+    >
+      <select
+        name=""
+        id="selection"
+        class="border px-3 py-2 rounded-md border-gray-400 hover:border-blue-400 focus:border-blue-500 outline-blue-700"
+      >
+        <option value="chooseOption" selected disabled>Choose option</option>
+        <option value="ID">Choose quotes's ID</option>
+        <option value="Title">Choose quotes's Title</option>
+      </select>
+      <input
+        type="text"
+        id="search"
+        disabled
+        placeholder=""
+        class="flex-grow-1 px-3 py-2 border bg-slate-100 border-gray-400 hover:border-blue-400 focus:border-blue-600 focus:bottom-1 rounded-md outline-none cursor-not-allowed"
+      />
+      <button
+        type="submit"
+        id="btnSubmit"
+        disabled
+        class="px-4 py-2 bg-green-600 text-white w-28 rounded-md cursor-not-allowed"
+      >
+        Search
+      </button>
+      <p id="notification" class="text-red-500 font-semibold absolute left-[380px] mt-16"></p>
+    </form>
+    <article>
+      <h1 class="text-2xl font-extrabold mt-10">Quote List</h1>
+    </article>
+    <article class="flex justify-start items-center gap-x-10 mt-15">
+      <img
+        id="img"
+        src=""
+        alt="picture"
+        class="hidden w-[300px] h-[350px] object-cover rounded-md"
+      />
+      <section>
+        <h3 class="font-bold text-xl" id="titleQuote"></h3>
+        <p class="text-gray-600 text-lg" id="paragraph"></p>
+      </section>
+    </article>
+    <script src="main.js"></script>
+  </body>
+</html>
