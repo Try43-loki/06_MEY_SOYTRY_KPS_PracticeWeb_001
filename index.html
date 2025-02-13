@@ -13,7 +13,9 @@
     <form
       id="formSearch"
       class="flex justify-between items-center mt-1 gap-x-4"
-    >
+    
+      >
+    <!--select option-->
       <select
         name=""
         id="selection"
@@ -23,6 +25,9 @@
         <option value="ID">Choose quotes's ID</option>
         <option value="Title">Choose quotes's Title</option>
       </select>
+
+
+      <!-- search quote -->
       <input
         type="text"
         id="search"
@@ -38,8 +43,12 @@
       >
         Search
       </button>
+    
+      <!-- notification -->
       <p id="notification" class="text-red-500 font-semibold absolute left-[380px] mt-16"></p>
     </form>
+
+    <!-- show quote -->
     <article>
       <h1 class="text-2xl font-extrabold mt-10">Quote List</h1>
     </article>
